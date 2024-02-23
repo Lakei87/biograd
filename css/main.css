@@ -1,3 +1,18 @@
+.button--primary {
+  min-width: 200px;
+  height: 50px;
+  font-family: roboto, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #fff;
+  background-color: #2196f3;
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -63,6 +78,7 @@ textarea {
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
+  background-color: antiquewhite;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -80,8 +96,15 @@ textarea {
   }
 }
 
+.button {
+  margin: 0;
+  padding: 0;
+  border: 1px solid transparent;
+}
+
 .page-header {
   position: relative;
+  background-color: aquamarine;
   border-bottom: 1px solid #ececec;
 }
 
@@ -92,6 +115,30 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.page-header__button {
+  z-index: 20;
+  margin-left: auto;
+  background-color: transparent;
+  fill: #212121;
+}
+.page-header__button:hover, .page-header__button:focus {
+  fill: #2196f3;
+}
+.page-header__button .button__icon-cross {
+  display: none;
+}
+.page-header__button.is-open .button__icon-cross {
+  display: block;
+}
+.page-header__button.is-open .button__icon-menu {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .page-header__button {
+    display: none;
+  }
 }
 
 .menu-wrapper {

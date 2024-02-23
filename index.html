@@ -18,10 +18,34 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <!--    Header  -->
+    <!--    ===Header===      -->
     <header class="page-header">
       <div class="container page-header__container">
         <p>Biograd Logo</p>
+        <!--    ===Mobile menu===     -->
+        <button
+          class="button page-header__button"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="button__icon-menu"
+              href="./images/icons.svg#icon-menu"
+            ></use>
+            <use
+              class="button__icon-cross"
+              href="./images/icons.svg#icon-cross"
+            ></use>
+          </svg>
+        </button>
+
         <div class="menu-wrapper">
           <nav class="header-nav">
             <ul class="header-nav__list">
