@@ -3,8 +3,9 @@
     margin-left: auto;
     padding-right: 15px;
     padding-left: 15px;
+    width: 100%;
 
-    background-color: antiquewhite;
+    // background-color: antiquewhite;
   
     @media screen and (min-width: $mobile) {
       width: 480px;

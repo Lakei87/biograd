@@ -1,34 +1,16 @@
 .header-contacts {
-    @media screen and (min-width: $tablet) {
-        display: flex;
-        flex-direction: column-reverse;
-    }
 
-    @media screen and (min-width: $desktop) {
-        flex-direction: row-reverse;
+    @media screen and (max-width: $tablet-to) {
+        display: none;
     }
 }
 
+.header-contacts__list {
+    display: flex;
+}
+
 .header-contacts__item {
-    @media screen and (max-width: $tablet-to) {
-        &:not(:last-child) {
-            margin-bottom: 32px;
-        }
-
-        &:last-child {
-            margin-bottom: 64px;
-        }
-    }
-
-    @media screen and (min-width: $tablet) and (max-width: $desktop-to) {
-        &:last-child {
-            margin-bottom: 10px;
-        }
-    }
-
-    @media screen and (min-width: $desktop) {
-        &:last-child {
-            margin-right: 30px;
-        }
+    &:not(:last-child) {
+        margin-right: 30px;
     }
 }

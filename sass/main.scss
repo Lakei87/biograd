@@ -2,11 +2,18 @@
 @import "./utils/breakpoints";
 @import "./utils/placeholders";
 @import "./base/glob";
+
 @import "./components/section";
 @import "./components/container";
 @import "./components/logo";
 @import "./components/button";
+
 @import "./components/page-header/page-header";
 @import "./components/page-header/menu";
 @import "./components/page-header/header-nav";
 @import "./components/page-header/header-contacts";
+
+@import "./components/page-main/page-main";
+@import "./components/page-main/products";
+
+@import "./components/page-footer/page-footer";

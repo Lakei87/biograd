@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bio-grad</title>
+    <title>Biograd</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -21,7 +21,8 @@
     <!--    ===Header===      -->
     <header class="page-header">
       <div class="container page-header__container">
-        <p>Biograd Logo</p>
+        <!-- <p>Biograd Logo</p> -->
+        <img src="./images/logo.jpg" alt="" width="70px" height="70px" />
 
         <!--    ===Mobile burger menu===     -->
         <button
@@ -47,12 +48,12 @@
           </svg>
         </button>
 
-        <div class="menu-wrapper">
+        <div class="menu-wrapper" data-menu>
           <nav class="header-nav">
             <ul class="header-nav__list">
-                <li class="header-nav__item">O nas</li>
-                <li class="header-nav__item">Products</li>
-                <li class="header-nav__item">Contacts</li>
+              <li class="header-nav__item">O nas</li>
+              <li class="header-nav__item">Products</li>
+              <li class="header-nav__item">Contacts</li>
             </ul>
           </nav>
           <div class="header-contacts">
@@ -72,7 +73,52 @@
         </div>
       </div>
     </header>
-    <main>main</main>
-    <footer>footer</footer>
+    <main class="page-main">
+      <section class="aboutUs section">
+        <div class="container">
+          <h2 class="title">O nas</h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+          autem aut minus perspiciatis corrupti accusantium iusto blanditiis,
+          ipsam, natus necessitatibus dolore ad et deleniti totam, tenetur nam
+          labore laboriosam beatae! Doloremque esse labore accusamus nisi odio
+          et exercitationem sapiente autem illum, quae vero, soluta assumenda ad
+          eos suscipit corrupti, voluptatum in? Expedita aliquam ratione
+          laboriosam. Praesentium et provident reiciendis dicta.
+        </div>
+      </section>
+      <section class="products section">
+        <div class="container">
+          <h2 class="title">Products</h2>
+          <ul class="products__list">
+            <li class="products__item">
+              Stavební řezivo borovice typ B
+              <img src="./images/myCollages.jpg" alt="" />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="contacts section">
+        <div class="container">
+          <h2 class="title">Contacts</h2>
+          <p>TEL.: +420 605 388 412</p>
+          <p>E-MAIL: kvalitnidrevo@gmail.com</p>
+          <br />
+          <p>Fakturačni udaje:</p>
+          <p>Biograd s.r.o.</p>
+          <p>Vlková 532/8, Praha, Žižkov, 130 00</p>
+          <p>IČ: 075 48 249</p>
+          <p>DIČ: CZ 075 48 249</p>
+
+          <h3>Naš tym</h3>
+          <img src="" alt="" width="50px" height="50px" />
+          <img src="" alt="" width="50px" height="50px" />
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="container">footer</div>
+    </footer>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>
