@@ -6,11 +6,16 @@
 }
 
 .header-contacts__list {
-    display: flex;
+    @media screen and (min-width: $desktop) {
+        display: flex;
+    }
 }
 
 .header-contacts__item {
-    &:not(:last-child) {
-        margin-right: 30px;
+    @media screen and (min-width: $desktop) {
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+        
     }
 }

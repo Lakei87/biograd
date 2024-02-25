@@ -1,0 +1,39 @@
+.contacts {
+    background-color: rgba(245, 245, 245, 0.832);
+}
+
+.contacts__container {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.contacts__title {
+    margin-bottom: 15px;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.contacts__tel__wrap {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 0;
+    }
+}
+
+.contacts__udaje__wrap {
+text-align: end;
+}
+
+.contacts__udaje__subtitle {
+    // margin-bottom: 5px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+}
