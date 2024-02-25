@@ -108,6 +108,7 @@ textarea {
   margin: 0;
   padding: 0;
   border: 1px solid transparent;
+  cursor: pointer;
 }
 
 .page-header {
@@ -141,9 +142,10 @@ textarea {
   margin-left: auto;
   background-color: transparent;
   fill: #212121;
+  border-radius: 5px;
 }
 .page-header__button:hover, .page-header__button:focus {
-  fill: #2196f3;
+  background-color: rgb(205, 205, 205);
 }
 .page-header__button .button__icon-cross {
   display: none;

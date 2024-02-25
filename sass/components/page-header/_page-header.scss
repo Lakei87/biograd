@@ -19,10 +19,11 @@
     margin-left: auto;
     background-color: transparent;
     fill: $primary-text-color;
+    border-radius: 5px;
   
     &:hover,
     &:focus {
-      fill: $accent-color;
+      background-color: rgb(205, 205, 205);
     }
   
     & .button__icon-cross {
