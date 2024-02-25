@@ -58,6 +58,7 @@ p {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 img {
@@ -233,6 +234,9 @@ textarea {
   }
 }
 
+.header-nav__item {
+  text-align: center;
+}
 @media screen and (max-width: 767px) {
   .header-nav__item {
     margin-bottom: 32px;

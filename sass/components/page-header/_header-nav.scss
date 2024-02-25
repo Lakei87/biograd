@@ -24,6 +24,7 @@
 }
 
 .header-nav__item {
+    text-align: center;
     @media screen and (max-width: $tablet-to) {
         margin-bottom: 32px;
     }
