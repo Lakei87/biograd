@@ -13,6 +13,21 @@
   cursor: pointer;
 }
 
+.contacts__name, .contacts__title, .aboutUs__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: #212121;
+  text-align: center;
+}
+
+.contacts__link, .contacts__text, .contacts__profession, .aboutUs__text {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -124,7 +139,8 @@ textarea {
       -ms-flex-pack: end;
           justify-content: end;
   width: 100%;
-  height: 70px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -218,7 +234,7 @@ textarea {
 .header-nav__list {
   font-weight: 500;
   font-size: 40px;
-  line-height: 1.18;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 @media screen and (min-width: 768px) {
@@ -267,8 +283,21 @@ textarea {
 
 @media screen and (min-width: 1200px) {
   .header-contacts__item:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 35px;
   }
+}
+
+.header-contacts__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-contacts__icon {
+  margin-right: 10px;
 }
 
 .page-main {
@@ -281,16 +310,22 @@ textarea {
   background-color: rgba(245, 245, 245, 0.832);
 }
 
+.aboutUs__container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .aboutUs__container p {
   text-indent: 20px;
 }
 
 .aboutUs__title {
-  margin-bottom: 15px;
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 500;
-  text-align: center;
+  margin-bottom: 20px;
+}
+
+.aboutUs__text {
+  text-align: justify;
+  color: #757575;
 }
 
 @media screen and (min-width: 768px) {
@@ -372,35 +407,103 @@ textarea {
 }
 
 .contacts__title {
-  margin-bottom: 15px;
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 500;
-  text-align: center;
+  margin-bottom: 20px;
 }
 
-.contacts__tel__wrap {
+.contacts__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contacts__item {
+  padding: 40px 30px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 4px 4px;
+}
+@media screen and (max-width: 767px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
-  .contacts__tel__wrap {
-    margin-bottom: 0;
+  .contacts__item {
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__item {
+    -ms-flex-preferred-size: calc((100% - 90px) / 3);
+        flex-basis: calc((100% - 90px) / 3);
   }
 }
 
-.contacts__udaje__wrap {
-  text-align: end;
+.contacts__item__inner {
+  margin-bottom: 10px;
 }
 
-.contacts__udaje__subtitle {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 400;
+.contacts__avatar {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+  background-color: antiquewhite;
+  border-radius: 50%;
+}
+
+.contacts__name {
+  text-align: start;
+  margin-bottom: 20px;
+}
+
+.contacts__profession {
+  margin-bottom: 10px;
+  color: #757575;
+}
+
+.contacts__text {
+  color: #757575;
+}
+
+.contacts__text__inner {
+  margin-bottom: 10px;
+}
+
+.contacts__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #448ccb;
+}
+.contacts__link:focus, .contacts__link:hover {
+  color: #336c9e;
+}
+
+.contacts__icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.page-footer__container {
+  padding-top: 30px;
+  padding-bottom: 20px;
 }/*# sourceMappingURL=main.css.map */

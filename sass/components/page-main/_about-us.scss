@@ -2,14 +2,28 @@
     background-color: rgba(245, 245, 245, 0.832);
 }
 
+.aboutUs__container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    // background-color: $primery-white-color;
+    // box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    //     0px 2px 1px rgba(0, 0, 0, 0.2);
+    // border-radius: 0 0 4px 4px;
+    // border-bottom: 1px solid grey;
+}
+
 .aboutUs__container p {
     text-indent: 20px;
 }
 
 .aboutUs__title {
-    margin-bottom: 15px;
-    font-size: 24px;
-    line-height: 28px;
-    font-weight: 500;
-    text-align: center;
+    margin-bottom: 20px;
+    @extend %title-h2;
+}
+
+.aboutUs__text {
+    @extend %text-primary;
+    text-align: justify;
+    color: $secondary-text-color;
 }

@@ -66,6 +66,9 @@
             <ul class="header-contacts__list">
               <li class="header-contacts__item">
                 <a href="tel:+420605388412" class="header-contacts__link">
+                  <svg class="header-contacts__icon" width="10" height="16">
+                    <use href="./images/icons.svg#icon-mobile-phone"></use>
+                  </svg>
                   +420 605 388 412
                 </a>
               </li>
@@ -74,6 +77,9 @@
                   href="mailto:kvalitnidrevo@gmail.com"
                   class="header-contacts__link"
                 >
+                  <svg class="header-contacts__icon" width="16" height="12">
+                    <use href="./images/icons.svg#icon-envelope"></use>
+                  </svg>
                   kvalitnidrevo@gmail.com
                 </a>
               </li>
@@ -86,21 +92,24 @@
       <section class="aboutUs section" id="aboutUs">
         <div class="container aboutUs__container">
           <h2 class="aboutUs__title">O nas</h2>
-          <p>
+          <p class="aboutUs__text">
             Společnost BIOGRAD s.r.o. je distributorem uznávaného ukrajinského
             výrobce dřeva v České republice, klademe velký důraz na kvalitu,
             veškerá naše produkce před vývozem prochází přísnou kontrolou, a
             každá objednávka má vyžadovanou dokumentaci pro dovoz na území
-            Evropské unii. Nyní nabízíme vysocekvalitní řezivo borovice , které
-            je připraveno k rozvozu ze skladu ve Starém Kolíně , Česká
-            republika. Pro nás je velice důležitý individuální přístup k
-            požadavkům naších partnerů, jsme schopné na objednávku dodat i jiný
-            typ dřeva nebo jiné rozměry řeziva.
+            Evropské unii.
+          </p>
+          <p class="aboutUs__text">
+            Nyní nabízíme vysocekvalitní řezivo borovice , které je připraveno k
+            rozvozu ze skladu ve Starém Kolíně , Česká republika. Pro nás je
+            velice důležitý individuální přístup k požadavkům naších partnerů,
+            jsme schopné na objednávku dodat i jiný typ dřeva nebo jiné rozměry
+            řeziva.
           </p>
         </div>
       </section>
       <section class="products section" id="products">
-        <h2 class="products__title">Products</h2>
+        <h2 class="products__title">Produkce</h2>
         <div class="container products__container">
           <div class="products__img__wrap">
             <ul class="products__list">
@@ -131,9 +140,7 @@
                   <p>- 45 mm x 220 mm x 6000 mm</p>
                 </li>
                 <li class="products__sub__item">
-                  <span class="products__sub__title--bold"
-                    >Cenová nabídka:</span
-                  >
+                  <span class="products__sub__title--bold">Cena</span>
                   řezivo borovice od 12000 Kč za 1 m 3 , přesná kalkulace po
                   objednávce.
                 </li>
@@ -163,35 +170,88 @@
         </div>
       </section>
       <section class="contacts section" id="contacts">
-        <h2 class="contacts__title">Contacts</h2>
+        <h2 class="contacts__title">Kontakty</h2>
         <div class="container contacts__container">
-          <div class="contacts__tel__wrap">
-            <a href="tel:+420605388412" class="header-contacts__link">
-              +420 605 388 412
-            </a>
-            <a
-              href="mailto:kvalitnidrevo@gmail.com"
-              class="header-contacts__link"
-            >
-              kvalitnidrevo@gmail.com
-            </a>
-          </div>
-          <div class="contacts__udaje__wrap">
-            <p class="contacts__udaje__subtitle">Fakturačni udaje:</p>
-            <p>Biograd s.r.o.</p>
-            <p>Vlková 532/8, Praha, Žižkov, 130 00</p>
-            <p>IČ: 075 48 249</p>
-            <p>DIČ: CZ 075 48 249</p>
-          </div>
-
-          <!-- <h3>Naš tym</h3>
-          <img src="" alt="" width="50px" height="50px" />
-          <img src="" alt="" width="50px" height="50px" /> -->
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <div class="contacts__item__inner">
+                <img
+                  class="contacts__avatar"
+                  src="./images/mobile/member1-mobile.jpg"
+                  alt="avatar"
+                />
+                <h3 class="contacts__name">Iryna Lakei</h3>
+              </div>
+              <p class="contacts__profession">Profesion</p>
+              <a href="tel:+420605388412" class="contacts__link">
+                <svg class="contacts__icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-mobile-phone"></use>
+                </svg>
+                +420 605 388 412
+              </a>
+              <a href="mailto:kvalitnidrevo@gmail.com" class="contacts__link">
+                <svg class="contacts__icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                kvalitnidrevo@gmail.com
+              </a>
+            </li>
+            <li class="contacts__item">
+              <div class="contacts__item__inner">
+                <img
+                  class="contacts__avatar"
+                  src="./images/mobile/member1-mobile.jpg"
+                  alt="avatar"
+                />
+                <h3 class="contacts__name">Iryna Lakei</h3>
+              </div>
+              <p class="contacts__profession">Profesion</p>
+              <a href="tel:+420605388412" class="contacts__link">
+                <svg class="contacts__icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-mobile-phone"></use>
+                </svg>
+                +420 605 388 412
+              </a>
+              <a href="mailto:kvalitnidrevo@gmail.com" class="contacts__link">
+                <svg class="contacts__icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                kvalitnidrevo@gmail.com
+              </a>
+            </li>
+            <li class="contacts__item">
+              <div class="contacts__item__inner">
+                <img class="contacts__avatar" src="./images" alt="avatar" />
+                <h3 class="contacts__name">Biograd s.r.o.</h3>
+              </div>
+              <div class="contacts__text__inner">
+                <p class="contacts__text">
+                  Vlková 532/8, Praha 3 - Žižkov, 130 00
+                </p>
+                <p class="contacts__text">IČ: 075 48 249</p>
+                <p class="contacts__text">DIČ: CZ 075 48 249</p>
+              </div>
+              <a href="tel:+420605388412" class="contacts__link">
+                <svg class="contacts__icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-mobile-phone"></use>
+                </svg>
+                +420 605 388 412
+              </a>
+              <a href="mailto:kvalitnidrevo@gmail.com" class="contacts__link">
+                <svg class="contacts__icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                kvalitnidrevo@gmail.com
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="container">footer</div>
+      <div class="container page-footer__container">
+        <p>&copy 2024 Biograd s.r.o.</p>
+      </div>
     </footer>
 
     <script src="./js/menu.js"></script>

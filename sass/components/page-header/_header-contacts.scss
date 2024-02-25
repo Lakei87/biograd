@@ -14,8 +14,16 @@
 .header-contacts__item {
     @media screen and (min-width: $desktop) {
         &:not(:last-child) {
-            margin-right: 30px;
+            margin-right: 35px;
         }
-        
     }
+}
+
+.header-contacts__link {
+    display: flex;
+    align-items: center;
+}
+
+.header-contacts__icon {
+    margin-right: 10px;
 }
