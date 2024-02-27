@@ -10,14 +10,14 @@
 }
 
 .page-header__container {
-    position: relative;
     display: flex;
     align-items: center;
 }
 
 .page-header__button {
     z-index: 20;
-    margin-left: auto;
+    position: absolute;
+    right: 15px;
     background-color: transparent;
     fill: $primary-text-color;
     border-radius: 5px;
@@ -46,4 +46,4 @@
     @media screen and (min-width: $tablet) {
       display: none;
     }
-  }
+}
