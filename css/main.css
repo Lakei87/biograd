@@ -13,7 +13,7 @@
   cursor: pointer;
 }
 
-.contacts__name, .contacts__title, .aboutUs__title {
+.contacts__name, .contacts__title, .aboutUs__title, .header-nav__list {
   font-weight: 700;
   font-size: 28px;
   line-height: 1.18;
@@ -22,7 +22,7 @@
   text-align: center;
 }
 
-.contacts__link, .contacts__text, .contacts__profession, .aboutUs__text {
+.contacts__link, .contacts__text, .contacts__profession, .aboutUs__text, .header-contacts__link {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -120,6 +120,17 @@ textarea {
   }
 }
 
+.logo {
+  width: 70px;
+  height: 60px;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 80px;
+    height: 70px;
+  }
+}
+
 .button {
   margin: 0;
   padding: 0;
@@ -162,7 +173,7 @@ textarea {
   border-radius: 5px;
 }
 .page-header__button:hover, .page-header__button:focus {
-  background-color: rgb(205, 205, 205);
+  background-color: rgba(245, 245, 245, 0.832);
 }
 .page-header__button .button__icon-cross {
   display: none;
@@ -188,7 +199,8 @@ textarea {
     top: 0;
     right: 0;
     z-index: 10;
-    padding: 80px 30px 30px;
+    padding: 80px 0 30px;
+    width: 250px;
     background-color: #fff;
     -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -230,12 +242,6 @@ textarea {
   }
 }
 
-.header-nav__list {
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
 @media screen and (min-width: 768px) {
   .header-nav__list {
     display: -webkit-box;
@@ -249,12 +255,13 @@ textarea {
   }
 }
 
-.header-nav__item {
-  text-align: center;
-}
 @media screen and (max-width: 767px) {
   .header-nav__item {
-    margin-bottom: 32px;
+    height: 65px;
+    width: 100%;
+  }
+  .header-nav__item:focus, .header-nav__item:hover {
+    background-color: rgba(245, 245, 245, 0.832);
   }
 }
 @media screen and (min-width: 768px) {
@@ -264,6 +271,20 @@ textarea {
   .header-nav__item:not(:last-child) {
     margin-right: 50px;
   }
+}
+
+.header-nav__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -293,9 +314,15 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #448ccb;
+}
+.header-contacts__link:focus, .header-contacts__link:hover {
+  color: #336c9e;
 }
 
 .header-contacts__icon {
+  width: 15px;
+  height: 15px;
   margin-right: 10px;
 }
 

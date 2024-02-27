@@ -9,10 +9,7 @@
 }
 
 .header-nav__list {
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    @extend %title-h2;
 
     @media screen and (min-width: $tablet) {
         display: flex;
@@ -24,9 +21,16 @@
 }
 
 .header-nav__item {
-    text-align: center;
+    // text-align: center;
+    
     @media screen and (max-width: $tablet-to) {
-        margin-bottom: 32px;
+        height: 65px;
+        width: 100%;
+        
+        &:focus,
+        &:hover {
+            background-color: rgba(245, 245, 245, 0.832);;
+        }
     }
 
     @media screen and (min-width: $tablet) {
@@ -36,4 +40,12 @@
             margin-right: 50px;
         }
     }
+}
+
+.header-nav__link {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }

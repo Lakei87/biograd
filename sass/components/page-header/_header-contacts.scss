@@ -22,8 +22,17 @@
 .header-contacts__link {
     display: flex;
     align-items: center;
+    @extend %text-primary;
+        color: #448ccb;
+    
+        &:focus,
+        &:hover {
+            color: #336c9e;
+        }
 }
 
 .header-contacts__icon {
+    width: 15px;
+    height: 15px;
     margin-right: 10px;
-}
+}   
