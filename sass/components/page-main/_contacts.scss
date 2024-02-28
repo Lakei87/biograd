@@ -17,7 +17,7 @@
 .contacts__list {
     display: flex;
     flex-wrap: wrap;
-    // justify-content: center;
+    justify-content: center;
 }
 
 .contacts__item {
@@ -53,7 +53,11 @@
 .contacts__item__inner {
     margin-bottom: 10px;
     @media screen and (min-width: $tablet) {
-        min-height: 66px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        min-height: 80px;
+        width: 100%;
         margin-bottom: 0;
     }
 }
@@ -71,7 +75,10 @@
 .contacts__name {
     @extend %title-h2;
     text-align: start;
-    margin-bottom: 20px
+
+    @media screen and (max-width: $tablet-to) {
+        margin-bottom: 20px
+    }
 }
 
 .contacts__profession {
