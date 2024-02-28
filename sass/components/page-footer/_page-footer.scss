@@ -6,5 +6,8 @@
 .page-footer__container {
     padding-top: 30px;
     padding-bottom: 20px;
-    // text-align: center;
+}
+
+.page-footer__signature {
+    @extend %text-primary;
 }

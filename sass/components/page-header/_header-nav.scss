@@ -1,10 +1,10 @@
 .header-nav {
     @media screen and (min-width: $tablet) {
-        margin-right: 84px;
+        margin-right: 100px;
     }
 
     @media screen and (min-width: $desktop) {
-        margin-right: 305px;
+        margin-right: 230px;
     }
 }
 
@@ -13,10 +13,16 @@
 
     @media screen and (min-width: $tablet) {
         display: flex;
-        align-items: center;
-
+        align-items: center;        
+        font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
+        letter-spacing: 0.03em;
+        color: $secondary-text-color;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 16px;
     }
 }
 

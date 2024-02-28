@@ -60,16 +60,10 @@
         width: 100%;
         margin-bottom: 0;
     }
-}
 
-.contacts__avatar {
-    width: 80px;
-    height: 60px;
-    margin-bottom: 10px;
-    background-color: antiquewhite;
-    // border-radius: 10px;
-
-    object-fit: contain
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 10px;
+    }
 }
 
 .contacts__name {
@@ -113,4 +107,5 @@
     width: 15px;
     height: 15px;
     margin-right: 10px;
+    fill: $secondary-text-color;
 }

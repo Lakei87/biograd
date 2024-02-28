@@ -22,7 +22,7 @@
   text-align: center;
 }
 
-.contacts__link, .contacts__text, .contacts__profession, .aboutUs__text, .header-contacts__link {
+.page-footer__signature, .contacts__link, .contacts__text, .contacts__profession, .aboutUs__text, .header-contacts__link {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -233,12 +233,12 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .header-nav {
-    margin-right: 84px;
+    margin-right: 100px;
   }
 }
 @media screen and (min-width: 1200px) {
   .header-nav {
-    margin-right: 305px;
+    margin-right: 230px;
   }
 }
 
@@ -250,8 +250,16 @@ textarea {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-nav__list {
+    font-size: 16px;
   }
 }
 
@@ -319,11 +327,17 @@ textarea {
 .header-contacts__link:focus, .header-contacts__link:hover {
   color: #336c9e;
 }
+@media screen and (min-width: 1200px) {
+  .header-contacts__link {
+    font-size: 16px;
+  }
+}
 
 .header-contacts__icon {
   width: 15px;
   height: 15px;
   margin-right: 10px;
+  fill: #757575;
 }
 
 .page-main {
@@ -496,14 +510,10 @@ textarea {
     margin-bottom: 0;
   }
 }
-
-.contacts__avatar {
-  width: 80px;
-  height: 60px;
-  margin-bottom: 10px;
-  background-color: antiquewhite;
-  -o-object-fit: contain;
-     object-fit: contain;
+@media screen and (min-width: 1200px) {
+  .contacts__item__inner {
+    margin-bottom: 10px;
+  }
 }
 
 .contacts__name {
@@ -545,6 +555,7 @@ textarea {
   width: 15px;
   height: 15px;
   margin-right: 10px;
+  fill: #757575;
 }
 
 .page-footer__container {
