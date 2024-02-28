@@ -1,7 +1,3 @@
-// .products {
-//     background-color: rgba(245, 245, 245, 0.832);
-// }
-
 .products__container {
     @media screen and (min-width: $tablet) {
         display: flex;
@@ -46,11 +42,6 @@
     margin-bottom: 10px;
 
     border-radius: 10px;
-    
-    // @media screen and (min-width: $tablet) {
-    //     width: 250px;
-    //     height: 250px;
-    // }
 }
 
 .products__sub__title--bold {
