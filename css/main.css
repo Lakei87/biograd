@@ -6,7 +6,7 @@
   font-size: 16px;
   line-height: 1.75;
   color: #fff;
-  background-color: #2196f3;
+  background-color: #009241;
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -22,7 +22,7 @@
   text-align: center;
 }
 
-.page-footer__signature, .contacts__link, .contacts__text, .contacts__profession, .aboutUs__text, .header-contacts__link {
+.page-footer__signature, .contacts__link, .contacts__text, .contacts__profession, .products__sub, .aboutUs__text, .header-contacts__link {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -368,23 +368,18 @@ textarea {
   color: #757575;
 }
 
-@media screen and (min-width: 768px) {
-  .products__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
 .products__title {
   margin-bottom: 20px;
 }
 
-.products__card {
-  background-color: aqua;
+@media screen and (min-width: 768px) {
+  .products__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 .products__img {
@@ -401,9 +396,37 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  color: #757575;
+}
+
+.products__sub__info {
+  position: relative;
+}
+
+.products__sub__type {
+  font-size: 20px;
+  text-align: center;
+  color: #000;
+}
+
+.products__sub__size {
+  font-size: 20px;
+}
+
+.products__sub__price {
+  font-size: 20px;
+  color: #009241;
+}
+
+.products__sub__price--large {
+  font-size: 26px;
 }
 
 .contacts {
