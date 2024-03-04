@@ -7,5 +7,10 @@
   
   .button--primary {
     @extend %button-primary;
+
+    &:hover,
+    &:focus{
+      background-color: #007333;
+    }
   }
   

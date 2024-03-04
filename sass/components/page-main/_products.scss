@@ -1,8 +1,7 @@
 .products__container {
-    @media screen and (min-width: $tablet) {
-        // display: flex;
-        // justify-content: center;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: center;
 }
 
 .products__title {
@@ -11,33 +10,36 @@
 }
 
 .products__card {
-    // padding: 15px;
-    // background-color: rgba(245, 245, 245, 0.832);
+    padding: 40px 30px;
+    width: 100%;
+
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+    // background-color: $primery-white-color;
+    background-color: rgba(245, 245, 245, 0.832);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 4px 4px;
+
+    @media screen and (max-width: $tablet-to) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
 
     @media screen and (min-width: $tablet) {
-        display: flex;
-        justify-content: space-around;
+        flex-basis: calc((100% - 2 * 30px) / 2);
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        flex-basis: calc((100% - 3 * 30px) / 3);
     }
 }
-
-// .products__subtitle {
-//     margin-bottom: 5px;
-//     font-size: 18px;
-//     line-height: 24px;
-//     font-weight: 400;
-//     text-align: center;
-// }
-
-// .products__item {
-//     display: flex;
-//     flex-direction: column;
-// }
-
-// .products__img__wrap {
-//     @media screen and (min-width: $tablet) {
-//         margin-right: 50px;
-//     }
-// }
 
 .products__img {
     display: block;
@@ -62,20 +64,14 @@
     position: relative;
 }
 
-.products__sub__list {
-    // display: none;
-    // position: sticky;
-}
-.products__sub__item {
-
+.products__sub__category__list {
+    margin-bottom: 15px;
 }
 
 .products__sub__type {
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     color: #000
-
-
 }
 
 .products__sub__size {  
@@ -84,16 +80,10 @@
 
 .products__sub__price {
     font-size: 20px;
+    font-weight: 500;
     color: #009241;
 }
 
 .products__sub__price--large {
     font-size: 26px;
 }
-// .products__sub__title--bold {
-//     font-weight: 500;
-// }
-
-// .products__sub__item:not(:last-child) {
-//     margin-bottom: 5px;
-// }
